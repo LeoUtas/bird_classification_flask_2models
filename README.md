@@ -21,7 +21,7 @@ This repository hosts the source code for a web application to classify bird spe
 ### Demo
 
 <p align="center">
-  <a href="Video URL" style="display: flex; justify-content: center; align-items: center; margin-bottom:80px">
+  <a href="GIF" style="display: flex; justify-content: center; align-items: center; margin-bottom:80px">
     <img src="/video/bird-app524.gif" width="440" alt="" style="margin-right: 10px;"/>
     <img src="/video/bird-app-yolov8.gif" width="400" alt="" style="margin-left: 10px;"/>
   </a>
