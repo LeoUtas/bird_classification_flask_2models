@@ -63,53 +63,21 @@ Only the MobileNet architecture was chosen for the <a href="https://bird-classif
 
 ### How to use the source code
 
-##### Using the source code for development
+##### Test the source code
 
--   Fork this repository (https://github.com/LeoUtas/bird_classification_flask_2models.git)
+-   Fork/clone this repository (https://github.com/LeoUtas/bird_classification_flask_2models.git)
 -   Get the docker container ready
 
-    -   Run docker build (it might take a while for installing all the required dependencies to your local docker image)
+    -   Run docker build (name the app whatever you want on your local machine, and please note that it might take a while for installing all the required dependencies to your local docker image)
 
     ```cmd
-    docker build -t <name of the docker image> .
+    docker build -t <name of the app> .
     ```
 
     -   Run the Docker Container (once the docker image is built, you will run a docker container, map it to the port 5000)
 
     ```cmd
-    docker run -p 5000:5000 -v "$(PWD):/app" --name <name of the container> <name of the docker image>
-    ```
-
-
--   Run the app.py on the docker container
-
-    -   For windows users
-
-    ```cmd
-    python app.py
-    ```
-
-    -   For MacOS and Linux users
-
-    ```bash
-    python3 app.py
-    ```
-
-    -   Change debug=False to True in app.py for development (it's crucial to asign debug=True for the ease of tracking bugs when customizing the code)
-
-    ```python
-    # the last chunk of code in the app.py
-    if __name__ == "__main__":
-    port = int(
-        os.environ.get("PORT", 5000)
-    )  # define port so we can map container port to localhost
-    app.run(host="0.0.0.0", port=port, debug=False)  # define 0.0.0.0 for Docker
-    ```
-
--   Stop running the container when you're done:
-
-    ```cmd
-    docker stop <name of the container>
+    docker run -p 5000:5000 -v "$(PWD):/app" --name <name of the container> <name of the app>
     ```
 
 I'm excited to share this repository! Please feel free to explore its functionalities. Thank you for this far. Have a wonderful day ahead!
