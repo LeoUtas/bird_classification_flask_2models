@@ -9,7 +9,6 @@
     <li><a href="#data-source">Data source</a></li>
     <li><a href="#the-design">The design</a></li>
     <li><a href="#how-to-use-the-source-code">How to use the source code</a></li>
-    <li><a href="#the-bottom-line">The Bottom Line</a></li>
     <li><a href="#reference">Reference</a></li>
   </ol>
 </details>
@@ -117,8 +116,6 @@ Only the MobileNet architecture was chosen for the <a href="https://bird-classif
     ```cmd
     docker stop <name of the container>
     ```
-
-### The bottom line
 
 I'm excited to share this repository! Please feel free to explore its functionalities. Thank you for this far. Have a wonderful day ahead!
 
