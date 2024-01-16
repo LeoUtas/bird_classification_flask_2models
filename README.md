@@ -7,7 +7,6 @@
     <li><a href="#demo">Demo</a></li>
     <li><a href="#technical-tools">Technical Tools</a></li>
     <li><a href="#data-source">Data source</a></li>
-    <li><a href="#the-design">The design</a></li>
     <li><a href="#how-to-use-the-source-code">How to use the source code</a></li>
     <li><a href="#reference">Reference</a></li>
   </ol>
@@ -15,7 +14,30 @@
 
 ### Introduction
 
-This repository hosts the source code for a web application to classify bird species. It integrates two models: a customization of MobileNet architecture (Howard, A.G., et al., 2017) and a model based on the You Only Look Once (YOLO) framework (Redmon, J. et al., 2016). The application features a user-friendly interface for easy image uploading and rapid species identification.
+<ul style="padding-left: 20px; list-style-type: circle;">
+        <li>The project includes 4 repositories:
+            <ul>                
+                <li>
+                <a href="https://github.com/LeoUtas/bird_classification_research.git" style="text-decoration: none; color: #3498db;">Bird classification research</a>
+                </li>
+                <li>
+                <a href="https://github.com/LeoUtas/bird_classification_flask_MobileNet.git" style="text-decoration: none; color: #3498db;">Bird classification web application using MobileNet model</a>
+                </li>
+                <li>
+                <a href="https://github.com/LeoUtas/bird_classification_flask_YOLOv8.git" style="text-decoration: none; color: #3498db;">Bird classification web application using YOLOv8 model</a>
+                </li>
+                <li>
+                <a href="https://github.com/LeoUtas/bird_classification_flask_2models.git">Bird classification web app using MobileNet and YOLOv8 for better comparing model performances</a>
+                </li>                                
+            </ul>
+        </li>
+        <br>
+        <li>
+            I attempted to solve the task using 4 different tools (i.e., InceptionV3, MobileNetV1, MobileNetV2 and YOLOv8). After evaluating performance metrics and processing speed, MobileNetV1 was chosen as the most suitable model for this task <a href="https://bird-classification524-b310a542793a.herokuapp.com/">(visit the live demo)</a>.
+        </li>        
+    </ul>
+
+This repository offers source code for a web application using MobileNetV1 and YOLOv8.
 
 ### Demo
 
@@ -50,16 +72,6 @@ This repository hosts the source code for a web application to classify bird spe
 ### Data source
 
 This project utilizes a bird species dataset provided by <a href="https://www.kaggle.com/gpiosenka">Gerry</a>, available on Kaggle. For detailed information, visit <a href="https://www.kaggle.com/datasets/gpiosenka/100-bird-species/data"> birds 525 species- image classification </a>.
-
-### The design
-
-I developed a bird classification web application with three distinct approaches:
-
--   A 2-stage model using YOLOv8 architecture, <a href="https://github.com/LeoUtas/bird_classification_flask_YOLOv8.git">(source code)</a>;
--   A 1-stage model using MobileNet architectures, <a href="https://github.com/LeoUtas/bird_classification_flask_MobileNet.git">(source code)</a>; and
--   A combination of the YOLOv8 and MobileNet architectures, <a href="https://github.com/LeoUtas/bird_classification_flask_2models.git">(source code)</a>
-
-Only the MobileNet architecture was chosen for the <a href="https://bird-classification524-b310a542793a.herokuapp.com/"> final web application </a> after evaluating different models. However, this repository could offer a nice experience about comparing the performance of different models on real images.
 
 ### How to use the source code
 
